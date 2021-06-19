@@ -22,7 +22,8 @@ const deletePending = async (id) => await Pending.destroy({
 const deprecatePending = async (data) => await Pending.update({ isDeprecated: true }, {
     where: { 
         phone: data.phone,
-        key: data.key
+        key: data.key,
+        isDeprecated: false
     }
 });
 
