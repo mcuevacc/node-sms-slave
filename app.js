@@ -20,7 +20,7 @@ async function init(){
 		
 		getSQS_Data();
 	} catch (err) {
-		console.error('Unable to connect to the database:', error);
+		console.error('Unable to connect to the database:', err);
 	}
 }
 
